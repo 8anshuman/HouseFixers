@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HouseFixers - India</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <div class="logo" style="display:flex; align-items:center;">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#howItWorks">How it Works</a></li>
+          <li><a href="#tojoin">To join</a></li>
+          <li><a href="#contactus">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="auth-buttons">
+        <button id="loginBtn">Login</button>
+        <button id="signupBtn">Sign Up</button>
+        <button id="logoutBtn" style="display:none;">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <div id="welcomeSection">
+    <section class="hero">
+      <div class="container hero-content">
+        <h1 style="color:rgb(255, 255, 255);">Trusted Home Services in India</h1>
+        <p>Book trusted professionals for plumbing, carpentry, Home cleaning, electrical work.</p>
+        <div class="search-bar">
+          <input type="text" id="locationInput" placeholder="Enter your location (e.g. Indore)" autocomplete="off" />
+          <button>Search</button>
+        </div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7v6q6q6q6q6q6q6q6q6q6q6q6q6q6q6&libraries=places"></script>
+        
+      </div>
+    </section>
+  </div>
+
+  <main>
+  <div id="servicesSection">
+    <section id="services" class="services-section container">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="https://media.istockphoto.com/id/1048532228/photo/smiling-male-plumber-with-pipe-wrench-standing-arms-crossed.jpg?s=612x612&w=0&k=20&c=uYNubnA7kF2Qqh0KpHdT3RNS5j9zscslfRWw9IENEW0=" alt="Plumber" class="service-photo" />
+          <h3>Plumber</h3>
+          <p>Expert plumbing services for your home and office.</p>
+          <a href="booking-plumber.html" class="serviceBtn">Book Now</a>
+          <div class="providers">
+            <h4>Available Plumbers</h4>
+            <div class="service-images">
+            </div>
+            <ul>
+              <li>Ramesh Kumar - 10 yrs experience Cno.xxxxxxxxx</li>
+              <li>Sunil Sharma - 8 yrs experience Cno.xxxxxxxxx</li>
+              <li>Ajay Singh - 12 yrs experience Cno.xxxxxxxxx</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRffAFNfNQu5qJnJuc2n0qaRDMVM9dNGwlKnZYJAB92EgjrcK6Uxubk7a2fvenNeEncBt8&usqp=CAU" alt="Carpenter" class="service-photo" />
+          <h3>Carpenter</h3>
+          <p>Professional carpentry for furniture and repairs.</p>
+          <a href="booking-carpenter.html" class="serviceBtn">Book Now</a>
+          <div class="providers">
+            <h4>Available Carpenters</h4>
+            <div class="service-images">
+            </div>
+            <ul>
+              <li>Vikram Patel - 9 yrs experience Cno.xxxxxxxxx</li>
+              <li>Manoj Joshi - 7 yrs experience Cno.xxxxxxxxx</li>
+              <li>Ravi Desai - 11 yrs experience Cno.xxxxxxxxx</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="https://img.freepik.com/premium-photo/portrait-man-with-cleaning-equipment_85574-12994.jpg" alt="Home Cleaner" class="service-photo" />
+          <h3>Home Cleaner</h3>
+          <p>Reliable home cleaning services for a spotless space.</p>
+          <a href="booking-homecleaner.html" class="serviceBtn">Book Now</a>
+          <div class="providers">
+            <h4>Available Cleaners</h4>
+            <div class="service-images">
+        
+            </div>
+            <ul>
+              <li>Neha Gupta - 5 yrs experience Cno.xxxxxxxxx</li>
+              <li>Priya Singh - 6 yrs experience Cno.xxxxxxxxx</li>
+              <li>Sunita Rao - 4 yrs experience Cno.xxxxxxxxx</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="https://www.wearetheincrowd.com/wp-content/uploads/2021/12/Contractor-Equipment-201806-001.jpg" class="service-photo" />
+          <h3>Electrician</h3>
+          <p>Certified electricians for all your electrical needs.</p>
+          <a href="booking-electrician.html" class="serviceBtn">Book Now</a>
+          <div class="providers">
+            <h4>Available Electricians</h4>
+            <div class="service-images">
+            </div>
+            <ul>
+              <li>Ajit Kumar - 10 yrs experience Cno.xxxxxxxxx</li>
+              <li>Rohit Mehta - 8 yrs experience Cno.xxxxxxxxx</li>
+              <li>Deepak Sharma - 9 yrs experience Cno.xxxxxxxxx</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+    <section id="howItWorks" class="how-it-works-wrapper1">
+      <div class="how-it-works">
+        <h2 class="how-it-works-title">How It Works</h2>
+        <div class="how-it-works-steps">
+          <div class="step">
+            <h3>Search Services</h3>
+            <p>Find the service you need in your location.</p>
+          </div>
+          <div class="step">
+            <h3>Book Appointment</h3>
+            <p>Call professionals to book appointment.</p>
+          </div>
+          <div class="step">
+            <h3>Get Service</h3>
+            <p>The professionals arrive and complete the job.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  <!-- <section id="howItWorks" class="how-it-works container"> 
+      <h2>How It Works</h2>
+      <div class="step">
+        <div class="step">
+          <i class="fas fa-search fa-2x"></i>
+          <h3>Search Services</h3>
+          <p>Find the service you need in your location.</p>
+        </div>
+        <div class="step">
+          <i class="fas fa-calendar-check fa-2x"></i>
+          <h3>Book Appointment</h3>
+          <p>Schedule a convenient time for the service.</p>
+        </div>
+        <div class="step">
+          <i class="fas fa-thumbs-up fa-2x"></i>
+          <h3>Get Service</h3>
+          <p>Our professionals arrive and complete the job.</p>
+        </div>
+      </div>
+    </section> -->
+
+    <section id="tojoin" class="tojoin container">
+      <h2>To Have your information listed on website</h2>
+      <div class="tojoin-cards">
+        <div class="tojoin-card">
+          <p>"For being a part of housefixers, you can email us on-"</p>
+          <h4>- joinhousefixer@gmail.com</h4>
+        </div>
+        <div class="tojoin-card">
+          <p>"Attech your documents in the Email."</p>
+          <h4>- AadharCard , Pan Card.</h4>
+        </div>
+        <div class="tojoin-card">
+          <p>"Share your details, our team will add your name after verifying it."</p>
+          <h4>-Details- Name , Contact Number , Experience , Age.</h4>
+        </div>
+      </div>
+    </section>
+
+    <section id="authSection" class="auth-modal" style="display:none;">
+      <div id="loginForm" class="authForm">
+        <h3>Login</h3>
+        <input type="text" id="loginUsername" placeholder="Username" />
+        <input type="password" id="loginPassword" placeholder="Password" />
+        <button id="loginSubmit">Login</button>
+        <p id="loginMessage" class="message"></p>
+      </div>
+
+      <div id="signupForm" class="authForm" style="display:none;">
+        <h3>Sign Up</h3>
+        <input type="text" id="signupUsername" placeholder="Username" />
+        <input type="password" id="signupPassword" placeholder="Password" />
+        <button id="signupSubmit">Sign Up</button>
+        <p id="signupMessage" class="message"></p>
+      </div>
+    </section>
+  </main>
+  
+
+   <footer>
+    <section id="contactus" class="contactus"></section>
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        <p>If you have any questions, feel free to reach out to us:fixerscustomercare@gmail.com </p>
+        <a href="https://www.instagram.com/housefixersforhome?igsh=OWp1YTV5MHdtcWV5" target="_blank" class="social-btn instagram-btn" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#E4405F" width="20px" height="20px" aria-hidden="true" focusable="false">
+            <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zm8.75 2.25a.75.75 0 110 1.5.75.75 0 010-1.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7z"/>
+          </svg>
+        </a>
+        <div class="container footer-container">
+      <marquee width="" direction="left" height="">
+      <p>&copy; 2025 HouseFixers.</p>
+      <p>Contact: fixerscustomercare@gmail.com | +91 12345 67890</p>
+    </marquee>
+    </div>
+    </footer>
+  <script src="script.js"></script>
+  <a href="https://wa.me/+919301434773" target="_blank" aria-label="WhatsApp Chat" id="floatingWhatsappBtn" title="Chat with us on WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" style="width:40px; height:40px;" />
+  </a>
+  <style>
+    #floatingWhatsappBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(37, 211, 102, 0.6);
+      padding: 12px 18px;
+      z-index: 1000;
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      width: 60px;
+      height: 48px;
+    }
+    #floatingWhatsappBtn:hover {
+      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.8);
+      transform: scale(1.05);
+    }
+    #floatingWhatsappBtn img {
+      display: block;
+      width: 28px;
+      height: 28px;
+    }
+  </style>
+</body>
+</html>

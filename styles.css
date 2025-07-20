@@ -1,0 +1,517 @@
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  header {
+    background-color: #000000;
+    color: white;
+    padding: 1rem 0;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #cce5ff;
+  }
+  
+  .auth-buttons button {
+    background-color: white;
+    color: #000000;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 700;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .auth-buttons button:hover {
+    background-color: #071372;
+    box-shadow: 0 4px 15px rgba(0, 86, 179, 0.4);
+    color: white;
+  }
+
+  /* Social media buttons in header */
+  .social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: #000000;
+    border-radius: 4px;
+    width: 36px;
+    height: 36px;
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .social-btn:hover {
+    background-color: #071372;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 86, 179, 0.4);
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('https://wallpapers.com/images/featured/house-cleaning-background-xdntho6b8ri7ufnu.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 6rem 0 4rem;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  }
+  
+  .hero p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  }
+  
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 1rem;
+  }
+  
+  .search-bar button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    background-color: #000000;
+    color: white;
+    font-weight: 700;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-bar button:hover {
+    background-color: #000000;
+  }
+  
+  /* Main Sections */
+  main {
+    padding: 4rem 0;
+  }
+  
+  /* Services Section */
+  .services-section h2 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 2rem;
+  }
+  
+  .service-card {
+    background-color: rgba(255, 255, 255, 0.893);
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .service-photo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .service-images {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .service-images img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-images img:hover {
+    transform: scale(1.1);
+  }
+  
+  .service-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .service-card p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+  }
+  
+  /* Updated modern professional button style */
+  .serviceBtn {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.75rem;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .serviceBtn:hover {
+    background-color: #071372;
+    box-shadow: 0 4px 15px rgba(0, 86, 179, 0.4);
+  }
+  
+  .serviceBtn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Booking pages modern professional styles */
+  main.container h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  main.container ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  main.container ul li {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #eee;
+    font-size: 1.1rem;
+    color: #444;
+  }
+  
+  main.container ul li:last-child {
+    border-bottom: none;
+  }
+  
+  main.container form#bookingForm {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  main.container form#bookingForm button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  main.container form#bookingForm button:hover {
+    background-color: #000000;
+    box-shadow: 0 4px 15px rgba(0, 86, 179, 0.4);
+  }
+  
+  main.container form#bookingForm p#formMessage {
+    margin-top: 1rem;
+    font-weight: 700;
+    color: green;
+    font-size: 1rem;
+  }
+  
+  /* Other existing styles */
+  .service-card button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .service-card button:hover {
+    background-color: #000000;
+  }
+  
+  .how-it-works-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
+  .how-it-works-wrapper1 {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
+  .how-it-works {
+    background-color: #e9f0ff;
+    padding: 3rem 1rem;
+    border-radius: 10px;
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .how-it-works-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 2rem;
+  }
+  
+  .how-it-works-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+  
+  .step {
+    max-width: 250px;
+  }
+  
+  /* Tojoin Section */
+  .tojoin {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .tojoin h2 {
+    color: #000000;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+  }
+  
+  .tojoin-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .tojoin-card {
+    background-color: white;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 300px;
+    font-style: italic;
+    color: #555;
+  }
+  
+  .tojoin-card h4 {
+    margin-top: 1rem;
+    font-weight: 700;
+    color: #000000;
+  }
+  
+/* Auth Modal */
+.auth-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  z-index: 1000;
+  width: 320px;
+}
+
+.booking-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  z-index: 1000;
+  width: 320px;
+  text-align: center;
+}
+
+.authForm {
+  margin-top: 1rem;
+}
+
+.authForm input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.authForm button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.authForm button:hover {
+  background-color: #000000;
+}
+
+.message {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: red;
+}
+  
+  /* Footer */
+  footer {
+    background-color: #000000;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  footer p {
+    margin: 0.3rem 0;
+  }
+  
+  /* Providers list */
+  .providers {
+    margin-top: 1rem;
+    text-align: left;
+  }
+  
+  .providers h4 {
+    margin-bottom: 0.5rem;
+    color: #000000;
+    font-size: 1.2rem;
+  }
+  
+  .providers ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .providers ul li {
+    background-color: #e9f0ff;
+    margin-bottom: 0.3rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    color: #333;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .header-container {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .steps {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .testimonial-cards {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
